@@ -46,7 +46,7 @@ function processPayroll(employee) {
     };
 }
 
-Step 7 - Console Log Output
+//Step 7 - Console Log Output
 console.log("Payroll Process Results:");
 console.log("--------------------------------");
 
