@@ -10,3 +10,9 @@ const employees = [
 ];
 
 //step 3 - Base Pay only up to 40 hours
+function calculateBasePay(hourlyRate, hoursWorked) {
+    const regularHours = Math.min(hoursWorked, 40);
+    return regularHours * hourlyRate;
+}   
+
+//Step 4 - Overtime Pay for hours worked beyond 40 hours
