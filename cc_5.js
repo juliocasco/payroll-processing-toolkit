@@ -16,3 +16,13 @@ function calculateBasePay(hourlyRate, hoursWorked) {
 }   
 
 //Step 4 - Overtime Pay for hours worked beyond 40 hours
+function calculateOvertimePay(hourlyRate, hoursWorked) {
+    if (hoursWorked > 40) {
+        return (hoursWorked - 40) * hourlyRate * 1.5;
+}
+
+//Step 5 - Taxes at 15% of gross pay
+function calculateTaxes(grossPay) {
+    return grossPay * 0.15;
+}
+
