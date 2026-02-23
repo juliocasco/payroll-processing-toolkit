@@ -47,16 +47,17 @@ function processPayroll(employee) {
 }
 
 Step 7 - Console Log Output
-console.log("Payroll Processing Results:");
-console.log("-------------------------");
+console.log("Payroll Process Results:");
+console.log("--------------------------------");
 
 employees.forEach(employee => {
-    const payrollInfo = processPayroll(employee);
-    console.log(`Employee: ${payrollInfo.name}`);
-    console.log(`Base Pay: $${payrollInfo.basePay}`);
-    console.log(`Overtime Pay: $${payrollInfo.overtimePay}`);
-    console.log(`Gross Pay: $${payrollInfo.grossPay}`);
-    console.log(`taxes: $${(payrollInfo.grossPay * 0.15).toFixed(2)}`);
-    console.log(`Net Pay: $${payrollInfo.netPay}`);
-    console.log("-------------------------");
+  const payrollInfo = processPayroll(employee);
+
+  console.log(`Employee: ${payrollInfo.name}`);
+  console.log(`Base Pay: $${payrollInfo.basePay}`);
+  console.log(`Overtime Pay: $${payrollInfo.overtimePay}`);
+  console.log(`Gross Pay: $${payrollInfo.grossPay}`);
+  console.log(`Taxes: $${(payrollInfo.grossPay * 0.15).toFixed(2)}`);
+  console.log(`Net Pay: $${payrollInfo.netPay}`);
+  console.log("--------------------------------");
 });
